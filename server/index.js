@@ -2,6 +2,9 @@ import app from "./src/app.js";
 import { PORT } from "./src/config.js";
 import { connectDB } from "./src/db.js";
 
+import dotenv from 'dotenv';
+dotenv.config();
+
 async function main() {
   try {
     await connectDB();
